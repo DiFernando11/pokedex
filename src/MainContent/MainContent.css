@@ -1,0 +1,66 @@
+.mainContent {
+  width: auto;
+  border: solid 4px #c0ceff;
+  margin: 160px 1%;
+  display: flex;
+  border-radius: 13px;
+  background: #e34a4a;
+  box-shadow:  20px 20px 27px #5b1e1e,
+               -20px -20px 27px #ff7676;
+}
+
+.containerPokemon {
+  margin: 20px 25px 20px 50px;
+  width: auto;
+  height: 90%;
+  border: solid 5px #c0ceff;
+  border-radius: 13px;
+  background: #7881c4;
+  box-shadow: inset 20px 20px 27px #30344e,
+              inset -20px -20px 27px #c0ceff;
+  
+}
+.mainContent h1 {
+  text-align: center;
+  font-size: 1.5rem;
+  margin: 12px 0;
+}
+
+.search {
+  border-radius: 15px;
+  background: #f9fbfc;
+  border-radius: 2px;
+  border: 2px solid #202329;
+  margin: 0 24px;
+  height: 48px;
+  width: calc(100% - 62px);
+  font-size: 24px;
+  text-align: center;
+  font-family: "Montserrat";
+  font-weight: 400;
+  color: black;
+  border-radius: 21px;
+  background: #e0e0e0;
+  box-shadow: inset 5px 5px 13px #5a5a5a, inset -5px -5px 13px #ffffff;
+  margin-bottom: 80px;
+}
+
+.search::placeholder {
+  color: #a5a5a5;
+  font-family: "Montserrat";
+  font-weight: 400;
+}
+
+.containerSearch {
+  height: 80px;
+}
+@media (max-width: 1100px) {
+  .mainContent {
+    display: block;
+ 
+  }
+  .imgs {
+    width: 800px;
+    height: 100px;
+  }
+}
