@@ -1,8 +1,9 @@
 import React from "react";
 
-function PokemonSearch({ searchValue, setSearchValue }) {
+function PokemonSearch({ searchValue, setSearchValue, setRefreshPokemon, refreshPokemon }) {
   const onSearchValueChange = (event) => {
     setSearchValue(event.target.value);
+    setRefreshPokemon(!refreshPokemon);
   };
 
   // let searchedPokemon = [];

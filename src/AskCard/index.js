@@ -1,29 +1,32 @@
 import React from "react";
 import "./AskCard.css";
 import "../PokemonSearch/index";
-import imgs from "../Images/logoPokemon1.png";
 
-function AskCard({ pokemon: { name }, life, type, stroke, defending }) {
+function AskCard({ pokemon: { name, img, hp, attack, defense, types } }) {
   return (
     <section className="cardLayout">
       <div className="containerAskCard">
         <figure className="containerImages">
-          <img className="imgs figures" alt="pokemon" src={imgs} />
+          <img className="imgs figures" alt="pokemon" src={img} />
         </figure>
         <h1>{name}</h1>
         <ul className="containerHabilities">
           <li>
-            Vida:{" "}
-            <progress className="lifeBar" max={100} value={life}></progress>
+            <span className="atributePokemon healtAttribute">Healt:</span>
+            <progress className="lifeBar" max={100} value={hp}></progress>
           </li>
           <li>
-            Type: <span className="bold"> {type} </span>{" "}
+            <span className="atributePokemon">Types:</span>
+            {types?.length &&
+              types.map((type) => <span className="bold">{type},</span>)}
           </li>
           <li>
-            Stroke: <span className="bold"> {stroke} </span>
+            <span className="atributePokemon">Stroke</span>
+            <span className="bold"> {attack} </span>
           </li>
           <li>
-            Defending: <span className="bold">{defending}</span>{" "}
+            <span className="atributePokemon"> Defending:</span>
+            <span className="bold">{defense}</span>{" "}
           </li>
         </ul>
       </div>

@@ -29,7 +29,6 @@
 }
 
 h2 {
-  margin: 0% 2%;
   font-size: 5rem;
   position: absolute;
   text-align: center;
@@ -87,5 +86,9 @@ h2 {
 
   }
  
-  
+}
+@media (max-width: 550px) {
+  h2 {
+    font-size: 4rem;
+  }
 }

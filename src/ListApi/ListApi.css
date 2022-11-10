@@ -1,8 +1,21 @@
-
-
 .containerFigure {
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(120px, 2fr));
+  grid-template-columns: repeat(auto-fill, minmax(100px, 2fr));
   gap: 2px;
+}
+.button_page {
+  width: 42px;
+  cursor: pointer;
+  background: rgb(122, 101, 156);
+  border-radius: 4px;
+  border-color: rgb(35, 27, 1);
+  color: white;
+}
+.container_button_page {
+  display: flex;
+  gap: 2px;
+  justify-content: center;
+  margin-bottom: 8px;
+  margin-top: 20px;
 }

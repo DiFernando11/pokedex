@@ -2,37 +2,33 @@ import React from "react";
 import "./CardLayout.css";
 //  import { AskiAppi } from "../AskAppi";
 import { AskCard } from "../AskCard";
+import imgsp from "../Images/Pikachu-1-973x1024.png";
 
 function CardLayout({ requestLayaout, consultPokemon, setRequestLayaout }) {
   return (
- <>
+    <>
       {!consultPokemon.length && (
         <div>
           <figure className="containerPokeballSelect">
-            <img
-              className="pokeballSelect"
-              src="http://assets.stickpng.com/images/580b57fcd9996e24bc43c325.png"
-              alt="pichachu"
-              ></img>
+            <img className="pokeballSelect" src={imgsp} alt="pichachu"></img>
           </figure>
         </div>
       )}
       {consultPokemon.map((pokemon) => {
         return (
           <AskCard
-          key={pokemon.name}
-          pokemon={pokemon}
-          life={80}
-          type={"Water"}
-          stroke={300}
-          defending={200}
-          requestLayaout={requestLayaout}
-          setRequestLayaout={setRequestLayaout}
+            key={pokemon.name}
+            pokemon={pokemon}
+            life={80}
+            type={"Water"}
+            stroke={300}
+            defending={200}
+            requestLayaout={requestLayaout}
+            setRequestLayaout={setRequestLayaout}
           />
-          );
-        })}
-        </>
-
+        );
+      })}
+    </>
   );
 }
 

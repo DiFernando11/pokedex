@@ -2,9 +2,7 @@ import "./AskAppi.css";
 import "../PokemonSearch/index";
 import imgs from "../Images/logoPokemon1.png";
 
-function AskiAppi({ pokemon: { name }, setRequestLayaout }) {
-
-
+function AskiAppi({ pokemon: { name, img }, setRequestLayaout }) {
   const onSearchValueChange = () => {
     setRequestLayaout(name);
   };
@@ -13,7 +11,7 @@ function AskiAppi({ pokemon: { name }, setRequestLayaout }) {
     <div className="containerCardPokemon">
       <li onClick={onSearchValueChange}>{name}</li>
       <figure className="containerImg">
-        <img onClick={onSearchValueChange} alt="pokemon" src={imgs} />
+        <img onClick={onSearchValueChange} alt="pokemon" src={img} />
       </figure>
     </div>
   );
