@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/pokedex/static/css/main.9539e23b.css",
-    "main.js": "/pokedex/static/js/main.d314f39d.js",
+    "main.css": "/pokedex/static/css/main.07e80354.css",
+    "main.js": "/pokedex/static/js/main.6611b3e9.js",
     "static/media/Pikachu-1-973x1024.png": "/pokedex/static/media/Pikachu-1-973x1024.d6379f1d52f52ff79c1b.png",
     "static/media/daoarj9-eeca0f14-698f-4ddb-9083-dadc70f35dc2.png": "/pokedex/static/media/daoarj9-eeca0f14-698f-4ddb-9083-dadc70f35dc2.b13fef959acd0768fcf3.png",
     "static/media/logoPokemon6.png": "/pokedex/static/media/logoPokemon6.775f85544abe60b5573e.png",
@@ -9,11 +9,11 @@
     "static/media/logoPokemon4.png": "/pokedex/static/media/logoPokemon4.9458a338e2bae37456fd.png",
     "static/media/logoPokemon5.png": "/pokedex/static/media/logoPokemon5.e438ec08ac8a57af5b06.png",
     "index.html": "/pokedex/index.html",
-    "main.9539e23b.css.map": "/pokedex/static/css/main.9539e23b.css.map",
-    "main.d314f39d.js.map": "/pokedex/static/js/main.d314f39d.js.map"
+    "main.07e80354.css.map": "/pokedex/static/css/main.07e80354.css.map",
+    "main.6611b3e9.js.map": "/pokedex/static/js/main.6611b3e9.js.map"
   },
   "entrypoints": [
-    "static/css/main.9539e23b.css",
-    "static/js/main.d314f39d.js"
+    "static/css/main.07e80354.css",
+    "static/js/main.6611b3e9.js"
   ]
 }
